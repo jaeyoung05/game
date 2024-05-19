@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class Command extends BukkitCommand   {
 private block target;
-
+private win end;
     public Command(@NotNull String name) {
         super(name);
     }
@@ -25,9 +25,6 @@ private block target;
         if(commandSender instanceof Player player){
             World world = player.getWorld();
 
-            if(target.target(player)){
-
-            }
 
             if(strings.length == 0){
                 return false;
@@ -46,7 +43,9 @@ private block target;
                     player.getInventory().addItem(arrow2);
                     player.getInventory().addItem(arrow3);
                 }
-
+                case "stop" -> {
+                    target.blockDelete(player);
+                }
 
             }
 

@@ -34,6 +34,8 @@ public class delete implements Listener {
             return;
         }
 
+
+
         if(block.getType() == Material.TARGET && z2 - z >= 20  ){
 
             switch (arrowName){
@@ -75,4 +77,5 @@ public class delete implements Listener {
         location.getBlock().getRelative(0,1,0).setType(Material.AIR);
         location.getBlock().getRelative(0,-1,0).setType(Material.AIR);
     }
+
 }
