@@ -1,0 +1,4 @@
+name: game
+version: '${version}'
+main: org.lastdice.game.Game
+api-version: '1.20'
