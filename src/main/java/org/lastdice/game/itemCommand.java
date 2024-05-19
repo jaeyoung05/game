@@ -1,2 +1,9 @@
-package org.lastdice.game;public class itemCommand {
+package org.lastdice.game;
+
+public class itemCommand {
+
+    public itemCommand() {
+    }
+
+
 }

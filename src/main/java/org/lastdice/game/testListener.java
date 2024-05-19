@@ -1,2 +1,10 @@
-package org.lastdice.game;public class testListener {
+package org.lastdice.game;
+
+import org.bukkit.event.Listener;
+
+public class testListener implements Listener {
+
+
+
+
 }
